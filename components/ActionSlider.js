@@ -26,11 +26,19 @@ const ActionSlider = ({ data }) => {
     <Carousel className="mt-2 ml-3" responsive={responsive}>
       {data.map((movie) => (
         <div>
-          <div>
-            <img src={movie.src} />
+          <div className="m-1">
+            <img src={movie.src} style={{ width: "100%", }} />
           </div>
           <div>
-            <p style={{ color: "#fff", fontSize: "13px" }}>{movie.title}</p>
+            <p
+              style={{
+                color: "#fff",
+                fontSize: "13px",
+                margin: "10px 0px 0px 20px",
+              }}
+            >
+              {movie.title}
+            </p>
           </div>
         </div>
       ))}

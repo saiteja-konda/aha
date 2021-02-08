@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <MainCarouse style={{ marginTop: "200px" }} />
+      <MainCarouse style={{ marginTop: "200px",}} />
       <h4 className={styles.titles}>LATEST ON AHA</h4>
       <hr className={styles.div} />
       <ActionSlider data={latest} />
